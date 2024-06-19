@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply flex w-1/3 flex-col gap-6 rounded-2xl bg-white p-10 shadow-lg;
+}
+
+.card-profile {
+    @apply flex w-2/3 gap-6 rounded-2xl bg-white p-10 shadow-lg;
+}
+
+.btn {
+    @apply mt-4 rounded-xl py-3 font-bold text-white;
+}
+
+.textarea-bordered:focus,
+.file-input-bordered:focus,
+.select-bordered:focus,
+.input-bordered:focus {
+    @apply border-2 border-black;
+}
+
+.textarea-error,
+.file-input-error,
+.select-error,
+.input-error {
+    @apply border-2 border-red-500;
+}
+
+.section-input {
+    @apply w-full rounded-lg px-4 py-2;
+}
+
+.input-custom {
+    @apply w-full border-none bg-transparent outline-none;
+}
+
+.page-wrapper {
+    @apply p-5;
+}
