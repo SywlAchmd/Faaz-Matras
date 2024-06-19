@@ -33,5 +33,8 @@ Route::middleware('guest')->group(function() {
 Route::get('/order', \App\Livewire\Customer\Order::class)->name('customer_order');
 Route::get('/order/checkout', \App\Livewire\Customer\Checkout::class)->name('checkout');
 Route::get('/order/checkout/payment', \App\Livewire\Customer\PaymentSuccess::class) -> name('payment');
+Route::get('/generate', function() {
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+});
 
 
